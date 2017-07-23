@@ -59,7 +59,7 @@ gradle build automatic-mower
 Requirements
 ============
 * Java 1.8  
-* Gradle 3.2 or later 
+* Gradle 3.4 or later 
 
 
 
