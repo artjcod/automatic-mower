@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/camy2408/automatic-mower.svg?branch=master)](https://travis-ci.org/camy2408/automatic-mower)
 # automatic-mower
 
 
