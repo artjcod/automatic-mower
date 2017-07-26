@@ -115,6 +115,8 @@ public class InstructionParser {
 			for (ConstraintViolation<HasValidator> constraint : violations) {
 				String message = constraint.getMessage();
 				LOG.error(message);
+		           throw new MowerException(message);
+
 			}
 			return null;
 		} else {
