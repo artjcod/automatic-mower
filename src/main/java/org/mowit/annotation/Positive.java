@@ -8,11 +8,11 @@ import java.lang.annotation.Target;
 import javax.validation.Constraint;
 import javax.validation.Payload;
 
-import org.mowit.validator.MandatoryValidator;
+import org.mowit.validator.PositiveValidator;
 
 @Retention(RetentionPolicy.RUNTIME)
 @Target({ElementType.FIELD, ElementType.PARAMETER ,ElementType.CONSTRUCTOR})
-@Constraint(validatedBy = MandatoryValidator.class)
+@Constraint(validatedBy = PositiveValidator.class)
 
 /**
  * This annotation is to check positive values
