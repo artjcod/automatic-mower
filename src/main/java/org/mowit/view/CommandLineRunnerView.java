@@ -14,6 +14,7 @@ import org.mowit.exception.NotFoundException;
 import org.mowit.init.GlobalInitialization;
 import org.mowit.messages.MessageGetter;
 import org.mowit.model.AbstarctMower;
+import org.mowit.model.MowerStatus;
 import org.mowit.service.ObjectSerializer;
 import org.mowit.service.contracts.ILawnService;
 import org.mowit.service.contracts.IMowerService;
@@ -76,6 +77,10 @@ public class CommandLineRunnerView  {
 				} else if (option == 3) {
 					AbstarctMower reuseMower = mowerService.reuseMower(scanner);
 					instructionParser.parseExecute(scanner, reuseMower);
+					System.out.println(MessageGetter.getMessage(INST_EXECUTED));
+					System.out.println(SEPARATOR);
+					reuseMower.setState(MowerStatus.FINISHED);
+					mowerService.merge(reuseMower);
 				} else {
 					instructionParser.parse(System.in);
 				}
