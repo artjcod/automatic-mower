@@ -21,7 +21,7 @@ import org.springframework.data.annotation.Transient;
  * @version V1.0
  */
 
-@Cacheable(cacheManager = "lawns")
+@Cacheable("lawns")
 public class Lawn implements HasValidator, Serializable {
 
 	private static final long serialVersionUID = 1L;
