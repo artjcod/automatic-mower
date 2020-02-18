@@ -3,13 +3,6 @@ sudo: false
 dist: trusty
 script: gradle build
 jdk:
-  - oraclejdk8
-before_install:
-  - wget https://services.gradle.org/distributions/gradle-4.10-bin.zip
-  - unzip -qq gradle-4.10-bin.zip
-  - export GRADLE_HOME=$PWD/gradle-4.10
-  - export PATH=$GRADLE_HOME/bin:$PATH
-  - gradle -v
-   
+  - oraclejdk8   
 after_success:
    -gradle clean
