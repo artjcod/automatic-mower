@@ -1,4 +1,6 @@
 language: java
+sudo: false
+dist: trusty
 script: gradle build
 jdk:
    - oraclejdk8
