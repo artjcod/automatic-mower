@@ -91,7 +91,7 @@ public class DefaultSettingLoader implements SettingInterface, Initializable {
 
 	@Override
 	public String getSerFolder() {
-		return "D:\\AutomaticMower\\";
+		return "c:\\AutomaticMower\\";
 	}
 
 	@Override

@@ -1,9 +1,8 @@
 buildscript {
 	ext {
-		springBootVersion = '2.2.0.RELEASE'
+		springBootVersion = '2.2.4.RELEASE'
 	}
 	repositories {
-
 		mavenLocal()
 		mavenCentral()
 		maven { url "http://repo.spring.io/release" }
@@ -52,16 +51,15 @@ dependencies {
 	compile group: 'org.apache.commons', name: 'commons-lang3', version: '3.0'
 	compile group: 'commons-configuration', name: 'commons-configuration', version: '1.7'
 	compile group: 'javax.validation', name: 'validation-api', version: '2.0.0.CR3'
-	compile group: 'javax.el', name: 'el-api', version: '2.2'
+	compile group: 'javax.el', name: 'javax.el-api', version: '3.0.0'
 	compile group: 'org.glassfish.web', name: 'el-impl', version: '2.2'
-	compile group: 'org.springframework.data', name: 'spring-data-commons-core', version: '2.2.4.RELEASE'
-    compile group: 'commons-codec', name: 'commons-codec', version: '1.9'
+	compile group: 'org.springframework.data', name: 'spring-data-commons', version: '2.2.4.RELEASE'
+	compile group: 'commons-codec', name: 'commons-codec', version: '1.9'
 	compile group: 'javax.mail', name: 'mail', version: '1.4.7'
 	compile group: 'javax.xml.bind', name: 'jaxb-api', version: '2.2.4'
 	
 	
 	compile("org.springframework.boot:spring-boot-starter")
-	compile("org.hibernate:hibernate-validator")
-  
+	compile group: 'org.hibernate', name: 'hibernate-validator', version: '6.1.2.Final'
 }
 
