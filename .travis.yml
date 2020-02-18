@@ -6,3 +6,9 @@ jdk:
   - oraclejdk8   
 after_success:
    -gradle clean
+before_install:
+  - wget https://services.gradle.org/distributions/gradle-6.2-bin.zip
+  - unzip -qq gradle-6.2-bin.zip
+  - export GRADLE_HOME=$PWD/gradle-6.2
+  - export PATH=$GRADLE_HOME/bin:$PATH
+  - gradle -v
