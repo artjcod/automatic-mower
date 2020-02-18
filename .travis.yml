@@ -5,9 +5,9 @@ script: gradle build
 jdk:
   - oraclejdk8
 before_install:
-  - wget http://services.gradle.org/distributions/gradle-5.3-bin.zip
-  - unzip -qq gradle-5.3-bin.zip
-  - export GRADLE_HOME=$PWD/gradle-5.3
+  - wget https://services.gradle.org/distributions/gradle-6.2-bin.zip
+  - unzip -qq gradle-6.2-bin.zip
+  - export GRADLE_HOME=$PWD/gradle-6.2
   - export PATH=$GRADLE_HOME/bin:$PATH
   - gradle -v
    
