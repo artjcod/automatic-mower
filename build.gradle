@@ -63,3 +63,9 @@ dependencies {
 	compile group: 'org.hibernate', name: 'hibernate-validator', version: '6.1.2.Final'
 }
 
+sonarqube {
+  properties {
+    property "sonar.projectKey", "artjcod_automatic-mower"
+  }
+}
+
