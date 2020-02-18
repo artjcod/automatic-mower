@@ -7,7 +7,7 @@ addons:
     token:
       secure: '$SONAR_TOKEN'
 script:  
- - ./gradlew sonarqube
+ - gradle build sonarqube
 jdk:
   - oraclejdk8   
 after_success:
